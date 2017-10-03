@@ -1,6 +1,4 @@
-from PIL import Image
 import cv2
-import numpy as np
 import os
 import matplotlib.pyplot as plt
 
@@ -23,14 +21,14 @@ for index, image in enumerate(images):
         category = input('Category ? ')
         
     if index % 4 == 0:
-        path = 'dataset6/test'
+        path = 'data7/test'
     else:
-        path = 'dataset6/train'
+        path = 'data7/train'
         
     if category == 'm':
         cv2.imwrite(path + '/male/' + image, img)
     elif category == 'f':
         cv2.imwrite(path + '/female/' + image, img)
     elif category == 'o':
-        cv2.imwrite('dataset6/other/' + image, img)
+        cv2.imwrite('data7/other/' + image, img)
         
