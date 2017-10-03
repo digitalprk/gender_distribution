@@ -1,3 +1,6 @@
+# Fisherfaces classification
+# Original code: https://nicholastsmith.wordpress.com/2016/02/18/eigenfaces-versus-fisherfaces-on-the-faces94-database-with-scikit-learn/
+
 import numpy as np
 from sklearn.metrics import classification_report
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
@@ -6,9 +9,8 @@ from inspect import getsourcefile
 from os.path import abspath
 import os
 import cv2
-        
-path = os.path.dirname(abspath(getsourcefile(lambda:0)))
 
+path = os.path.dirname(abspath(getsourcefile(lambda:0)))
 
 X_train, y_train = [], []
 X_test, y_test = [], []
